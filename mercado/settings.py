@@ -6,7 +6,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--6h8i7k9!e$hew=*to7xn$5adi+amw027%p-1)f)fkj3xaszyl'
 
 DEBUG = True
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ["mercado-proyecto.onrender.com", "localhost", "127.0.0.1"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
