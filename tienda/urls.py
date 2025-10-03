@@ -2,9 +2,15 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.home_view, name="home"),
-    path("about/", views.about_view, name="about"),
-    path("pages/", views.pages_list_view, name="pages_list"),
-    path('catalogo/', views.catalogo, name='catalogo'),
+    # Rutas de Productos (Comentadas temporalmente)
+    # path('productos/', views.lista_productos, name='lista_productos'),
+    # path('productos/nuevo/', views.agregar_producto, name='agregar_producto'),
 
+    # Clientes
+    path('clientes/', views.lista_clientes, name='lista_clientes'),
+    path('clientes/nuevo/', views.agregar_cliente, name='agregar_cliente'),
+
+    # Ventas
+    path('ventas/', views.lista_ventas, name='lista_ventas'),
+    path('ventas/nueva/', views.agregar_venta, name='agregar_venta'),
 ]
