@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}Agregar Cliente{% endblock %}
+
+{% block content %}
 <h1>Agregar Cliente</h1>
 <form method="post">
     {% csrf_token %}
@@ -5,3 +9,4 @@
     <button type="submit">Guardar</button>
 </form>
 <a href="{% url 'lista_clientes' %}">Ver clientes</a>
+{% endblock %}

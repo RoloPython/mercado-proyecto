@@ -1,3 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}Lista de Clientes{% endblock %}
+
+{% block content %}
+
 <h1>Lista de Clientes</h1>
 <ul>
     {% for cliente in clientes %}
@@ -5,3 +10,4 @@
     {% endfor %}
 </ul>
 <a href="{% url 'agregar_cliente' %}">Agregar Cliente</a>
+{% endblock %}
