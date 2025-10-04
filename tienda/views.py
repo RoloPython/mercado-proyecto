@@ -16,8 +16,8 @@ def catalogo(request):
     return render(request, "catalogo.html", {"productos": productos})
 
 def home(request):
-    # redirige a la vista del catálogo
-    return redirect("catalogo")
+    # Ya no redirige. Simplemente renderiza la plantilla home.html.
+    return render(request, "home.html", {})
 
 def about(request):
     return render(request, "about.html")

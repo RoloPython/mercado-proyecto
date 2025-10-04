@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Página de inicio</title>
-</head>
-<body>
-    <h1>Bienvenido a la Tienda</h1>
-    <p>Usa el menú para ir al catálogo.</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}Inicio - MercadoProyecto{% endblock %}
 
+{% block content %}
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">¡Bienvenido a MercadoProyecto!</h1>
+            <p class="col-md-8 fs-4">Tu plataforma de gestión de inventario, clientes y ventas. Navega usando el menú superior.</p>
+            <a href="{% url 'catalogo' %}" class="btn btn-primary btn-lg">Explorar Catálogo</a>
+        </div>
+    </div>
+{% endblock %}
